@@ -38,7 +38,7 @@
     }
 
     .logo {
-      max-width: 160px;
+      max-width: 240px;
       margin-bottom: 1rem;
     }
 
@@ -59,12 +59,16 @@
 
     button {
       padding: 0.5rem;
-      background: var(--accent);
+      background: #000000;
       color: white;
       border: none;
       border-radius: 5px;
       font-size: 1rem;
       cursor: pointer;
+    }
+
+    button:active {
+      background: var(--accent);
     }
 
     button:hover {
@@ -81,8 +85,9 @@
 </head>
 <body>
   <img src="/logo.png" alt="Casual Jogging Club Logo" class="logo" />
+  <h1>Casual Jogging Club</h1>
   <p>Every Pace Counts.</p>
-  <p>coming soon</p>
+  <p>Our website is coming soon.</p>
 
   <form>
     <input type="email" placeholder="Your email for updates" required />
