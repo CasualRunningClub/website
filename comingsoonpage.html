@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casual Jogging Club</title>
+  <style>
+    :root {
+      --green: #1b4332;
+      --white: #ffffff;
+      --font: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font);
+      background: linear-gradient(135deg, #f0fdf4, #d8f3dc);
+      color: var(--green);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0.5em 0 0.2em;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0.2em 0;
+    }
+
+    .logo {
+      font-size: 5rem;
+      font-weight: bold;
+      background: var(--green);
+      color: var(--white);
+      padding: 0.3em 0.6em;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      animation: popIn 1.2s ease-out forwards;
+      opacity: 0;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">CJC</div>
+  <h1>Casual Jogging Club</h1>
+  <p>Every Pace Counts.</p>
+  <p>Website coming soon 🏃‍♂️</p>
+
+  <div class="footer">&copy; 2025 Casual Jogging Club</div>
+</body>
+</html>
